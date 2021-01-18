@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'dk.alexander.sdu.se01.oop.exam'
+version '0.1.0'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+jar {
+    manifest {
+        attributes (
+            'Main-Class': 'dk.alexander.sdu.se01.oop.exam.Main'
+        )
+    }
+}
